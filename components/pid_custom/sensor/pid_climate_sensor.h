@@ -1,7 +1,7 @@
 #pragma once
 
 #include "esphome/core/component.h"
-#include "esphome/components/pid/pid_climate.h"
+#include "esphome/components/pid_custom/pid_climate.h"
 
 namespace esphome {
 namespace pid {
