@@ -1,1 +1,1 @@
-modified MAX31856 component for use with an N-type thermocouple
+modified PID component where integral can be set
