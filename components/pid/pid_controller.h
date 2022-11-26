@@ -42,6 +42,8 @@ struct PIDController {
 
   void reset_accumulated_integral() { accumulated_integral_ = 0; }
 
+  void set_accumulated_integral(float new_integral) { accumulated_integral_ = new_integral; }
+
   /// Proportional gain K_p.
   float kp = 0;
   /// Integral gain K_i.
