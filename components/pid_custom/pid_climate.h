@@ -26,6 +26,7 @@ class PIDClimate : public climate::Climate, public Component {
   void set_kd(float kd) { controller_.kd = kd; }
   void set_min_integral(float min_integral) { controller_.min_integral = min_integral; }
   void set_max_integral(float max_integral) { controller_.max_integral = max_integral; }
+  void set_integral( float new_integral) { controller_.set_accumulated_integral = new_integral; }
 
   float get_output_value() const { return output_value_; }
   float get_error_value() const { return controller_.error; }
